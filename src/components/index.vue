@@ -48,8 +48,7 @@ const fields = [
 		key: 'fundivePackage',
 		label: '펀다이빙',
 		sortable: true
-	}
-	,
+	},
 	{
 		key: 'updateAt',
 		label: '갱신일',
@@ -58,9 +57,9 @@ const fields = [
 ];
 const items = [
 	{ 'country': '일본', 'area': '오키나와', 'title': '홍스타', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
-	{ 'country': '일본', 'area': '오키나와', 'title': '씨써', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21'  },
-	{ 'country': '일본', 'area': '오키나와', 'title': '마레아오키나와', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21'  },
-	{ 'country': '일본', 'area': '오키나와', 'title': '탑마린잔파', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21'  }
+	{ 'country': '일본', 'area': '오키나와', 'title': '씨써', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
+	{ 'country': '일본', 'area': '오키나와', 'title': '마레아오키나와', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
+	{ 'country': '일본', 'area': '오키나와', 'title': '탑마린잔파', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' }
 ];
 
 export default {
