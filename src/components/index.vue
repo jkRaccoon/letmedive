@@ -48,11 +48,6 @@ const fields = [
 		key: 'fundivePackage',
 		label: '펀다이빙',
 		sortable: true
-	},
-	{
-		key: 'updateAt',
-		label: '갱신일',
-		sortable: true
 	}
 ];
 const items = [
