@@ -18,7 +18,7 @@
 			</b-jumbotron>
 		</div>
 		<div class="contents">
-			<b-table striped hover :items="items" :fields="fields">
+			<b-table striped hover responsive :items="items" :fields="fields" >
 				<template slot="title" slot-scope="row">
 					<router-link :to="{ path: '/shop/' + row.item.shopid}" for="a">{{row.value}}</router-link>
 				</template>
@@ -47,12 +47,12 @@ const fields = [
 	},
 	{
 		key: 'certificatePackage',
-		label: 'C-CARD코스',
+		label: '교육',
 		sortable: true
 	},
 	{
 		key: 'fundivePackage',
-		label: '펀다이빙',
+		label: 'Fun',
 		sortable: true
 	}
 ];
@@ -106,5 +106,6 @@ export default {
 }
 .contents {
 	padding: 1em;
+	font-size: 0.8em;
 }
 </style>
