@@ -1,5 +1,5 @@
 # letmedive
-
+[![Build Status](https://travis-ci.org/jkRaccoon/letmedive.svg?branch=master)](https://travis-ci.org/jkRaccoon/letmedive)
 ## Project setup
 ```
 yarn install
