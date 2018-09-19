@@ -17,7 +17,13 @@
 				</p>
 			</b-jumbotron>
 		</div>
-		<div class="contents"><b-table striped hover :items="items" :fields="fields"></b-table></div>
+		<div class="contents">
+			<b-table striped hover :items="items" :fields="fields">
+				<template slot="title" slot-scope="row">
+					<router-link :to="{ path: '/shop/' + row.item.shopid}" for="a">{{row.value}}</router-link>
+				</template>
+			</b-table>
+		</div>
 	</div>
 </template>
 
@@ -51,10 +57,10 @@ const fields = [
 	}
 ];
 const items = [
-	{ 'country': '일본', 'area': '오키나와', 'title': '홍스타', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
-	{ 'country': '일본', 'area': '오키나와', 'title': '씨써', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
-	{ 'country': '일본', 'area': '오키나와', 'title': '마레아오키나와', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
-	{ 'country': '일본', 'area': '오키나와', 'title': '탑마린잔파', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' }
+	{ 'shopid': 1, 'country': '일본', 'area': '오키나와', 'title': '홍스타', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
+	{ 'shopid': 2, 'country': '일본', 'area': '오키나와', 'title': '씨써', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
+	{ 'shopid': 3, 'country': '일본', 'area': '오키나와', 'title': '마레아오키나와', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' },
+	{ 'shopid': 4, 'country': '일본', 'area': '오키나와', 'title': '탑마린잔파', 'certificatePackage': 1, 'fundivePackage': 5, updateAt: '2018-09-21' }
 ];
 
 export default {
