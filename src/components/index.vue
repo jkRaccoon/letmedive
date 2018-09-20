@@ -20,7 +20,7 @@
 		<div class="contents">
 			<b-table striped hover responsive :items="items" :fields="fields" >
 				<template slot="title" slot-scope="row">
-					<router-link :to="{ path: '/shop/' + row.item.shopid}" for="a">{{row.value}}</router-link>
+					<router-link :to="{ path: '/shop/' + row.item.idx}" for="a">{{row.value}}</router-link>
 				</template>
 			</b-table>
 		</div>
@@ -29,6 +29,7 @@
 
 <script>
 import headers from './common/headers';
+import apiShop from '../api/shop';
 const fields = [
 	{
 		key: 'country',
@@ -46,13 +47,8 @@ const fields = [
 		sortable: true
 	},
 	{
-		key: 'certificatePackage',
-		label: '교육',
-		sortable: true
-	},
-	{
-		key: 'fundivePackage',
-		label: 'Fun',
+		key: 'website',
+		label: 'WEB',
 		sortable: true
 	}
 ];
@@ -68,9 +64,15 @@ export default {
 	components: {
 		headers: headers
 	},
+	created () {
+		apiShop.getShoplist().then(result => {
+			console.log(result.data[0]);
+			this.items = result.data[0];
+		});
+	},
 	data () {
 		return {
-			items: items,
+			items: [],
 			fields: fields
 		};
 	}
