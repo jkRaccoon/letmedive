@@ -70,6 +70,11 @@ export default {
 			this.items = result.data[0];
 		});
 	},
+	methods: {
+    track () {
+      this.$ga.page('/');
+    }
+  }
 	data () {
 		return {
 			items: [],

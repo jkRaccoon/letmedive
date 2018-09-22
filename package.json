@@ -11,9 +11,6 @@
   "dependencies": {
     "@babel/core": "^7.1.0",
     "@vue/babel-preset-app": "^3.0.1",
-    "@vue/cli-plugin-babel": "^3.0.3",
-    "@vue/cli-plugin-eslint": "^3.0.3",
-    "@vue/cli-service": "^3.0.3",
     "@vue/eslint-config-airbnb": "^3.0.3",
     "@vue/test-utils": "^1.0.0-beta.25",
     "axios": "^0.18.0",
@@ -37,10 +34,15 @@
     "mocha-webpack": "^1.1.0",
     "thread-loader": "^1.2.0",
     "vue": "^2.5.17",
+    "vue-analytics": "^5.16.0",
     "vue-loader": "^15.4.2",
     "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.19.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.3",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "vue-template-compiler": "^2.5.17"
+  }
 }
