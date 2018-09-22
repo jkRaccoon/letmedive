@@ -7,8 +7,8 @@ Vue.use(Router);
 // const main = { template: '<div>bar</div>' };
 
 const routes = [
-	{ path: '/', component: index },
-	{ path: '/shop/:shopid', component: detail }
+	{ path: '/', name: 'main', component: index },
+	{ path: '/shop/:shopid', name: 'view', component: detail }
 ];
 
 const router = new Router({

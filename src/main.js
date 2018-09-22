@@ -7,7 +7,9 @@ import VueAnalytics from 'vue-analytics';
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(VueAnalytics, {
-  id: 'UA-126217548-1'
+  id: 'UA-126217548-1',
+	router,
+	ignoreRoutes: ['/admin']
 });
 
 new Vue({

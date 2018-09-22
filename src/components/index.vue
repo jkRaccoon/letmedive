@@ -74,7 +74,7 @@ export default {
     track () {
       this.$ga.page('/');
     }
-  }
+  },
 	data () {
 		return {
 			items: [],
